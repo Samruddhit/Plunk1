@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<script data-require="angular.js@1.5.0-rc.0" data-semver="1.5.0-rc.0" src="https://code.angularjs.org/1.5.0-rc.0/angular.js"></script>
+  
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-app="Report" ng-controller="mytrl" >{{10+30}}
+  <input type="text" ng-model="message"/>
+  {{  {name:'Rama',age:36}.name }}
+      <h1 ng-controller="click" ng-mouseenter="c=c+1" >Hello Plunker!{{ message }}  {{c}}</h1>
+      <div>Employee Name:{{employee.firstName}}</div>
+      <div>Employee Surname:{{employee.lastName}}</div>
+      <div>Employee Gender:{{employee.gender}}</div>
+      <div><img ng-src="{{employee.pic}}" alt="{{employee.firstName}}'s pic" style="height:400px ; width1:100px" ng-click="greeting(employee)"><b class="bold">Likes: {{employee.like}}</b></div>
+      <marquee><b>Click the image and see the fun!!!</b><br></marquee>
+     
+      <button ng-click="{{employee.save}}">  Save</button>
+      <div><ul><li ng-repeat="country in countries"> {{country.name}}
+      <ul><li ng-repeat="city in country.cities">{{city.name}}</li></ul>
+      
+      </ul></div>
+      <div ng-controller="click" ng-mouseover="count(c)"> HELLO {{c}}</div>
+  </body>
+
+</html>
